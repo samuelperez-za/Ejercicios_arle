@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Cajero Automático</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #eef2f3;
+            padding: 20px;
+            max-width: 400px;
+            margin: auto;
+            text-align: center;
+        }
+        h1 {
+            color: #2c3e50;
+        }
+        button {
+            display: block;
+            width: 100%;
+            margin: 10px 0;
+            padding: 12px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        #output {
+            margin-top: 20px;
+            background: #fff;
+            border: 1px solid #ccc;
+            padding: 15px;
+            min-height: 60px;
+            text-align: left;
+        }
+        input[type="number"] {
+            width: calc(100% - 22px);
+            padding: 10px;
+            margin: 10px 0;
+        }
+    </style>
+</head>
+<body>
+
+  <script src="CAJERO.JS"></script>
+
+<h1>Cajero Automático</h1>
+
+<button onclick="consultarSaldo()">Consultar Saldo</button>
+<input type="number" id="deposito" placeholder="Monto a depositar">
+<button onclick="depositar()">Depositar</button>
+<input type="number" id="retiro" placeholder="Monto a retirar (máx $500)">
+<button onclick="retirar()">Retirar</button>
+<button onclick="verTransacciones()">Ver Transacciones</button>
+
+
+
+<div id="output"></div>
+
+
+</body>
+</html>
